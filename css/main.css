@@ -230,3 +230,58 @@ a {
     background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(/img/agave4.jpg) no-repeat;
     background-size: cover;
 }
+
+@media (width < 500px) {
+    .carrusel{
+        flex-direction: column;
+        flex-basis: 500px;
+        overflow: scroll;
+        width: 100%;
+        padding-right: 0;
+    }
+    .card {
+        height: 500px !important;
+        width: 100% !important;
+        margin-inline: 0;
+        padding-inline: 0rem;
+        padding-block: 2rem;
+        margin-block: 0.25rem;
+        min-width: unset;
+        gap: 1rem;
+    }
+    .card-principal {
+        margin: 0 !important;
+        padding-inline: 0 !important;
+        padding-block: 1rem !important;
+    }
+    .main-container {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    * {
+        overflow: unset;
+    }
+    .contenido {
+        background-color: unset;
+    }
+    .card-text{
+        display: none;
+    }
+    .telefono {
+        display: none;
+    }
+    .items-derecha{
+        display: none;
+    }
+    .items-90-deg {
+        display: none;
+    }
+    .footer a {
+       color: white;
+       font-weight: bold;
+    }
+    .footer ul {
+        padding: 0;
+        margin-bottom: 3rem;
+    }
+}

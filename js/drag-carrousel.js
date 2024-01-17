@@ -12,50 +12,66 @@ const time2 = {
     iteration: 1,
 };
 
+ 
 carrousel.addEventListener("mousemove", (e) => {
-
-    if (isSelected) {
-        if(e.pageX != 0) {
-            console.log(`Start: ${start}  Current: ${e.pageX}  End: ${end}`)
-            distancia = (start - e.pageX) * 0.1
-            
-            amount =  distancia + amount
-            console.log(`Cantidad: ${amount}`)
-            carrousel.scrollLeft = amount
-            if (amount < -20) {
-                carrousel.animate({
-                    transform: `translatex(${-amount}px)`
-                }, time2)
-                amount = 0
-            }
-            if (amount > carrousel.offsetWidth + 20) {
-                carrousel.animate({
-                    transform: `translatex(-${amount - carrousel.offsetWidth}px)`
-                }, time2)
-                amount = carrousel.offsetWidth 
+    if (window.innerWidth > 500) {
+        if (isSelected) {
+            if(e.pageX != 0) {
+                console.log(`Start: ${start}  Current: ${e.pageX}  End: ${end}`)
+                distancia = (start - e.pageX) * 0.1
+                
+                amount =  distancia + amount
+                console.log(`Cantidad: ${amount}`)
+                carrousel.scrollLeft = amount
+                if (amount < -20) {
+                    carrousel.animate({
+                        transform: `translatex(${-amount}px)`
+                    }, time2)
+                    amount = 0
+                }
+                if (amount > carrousel.offsetWidth + 20) {
+                    carrousel.animate({
+                        transform: `translatex(-${amount - carrousel.offsetWidth}px)`
+                    }, time2)
+                    amount = carrousel.offsetWidth 
+                }
             }
         }
     }
-
 })
 
 carrousel.addEventListener("drag", (e) => {
-    e.preventDefault()
+    if (window.innerWidth > 500) {
+        console.log("DRAG")
+        e.preventDefault()
+    }
 })
 carrousel.addEventListener("dragstart", (e) => {
-    e.preventDefault()
+    if (window.innerWidth > 500) {
+        console.log("DRAG START")
+        e.preventDefault()
+    }
 })
 carrousel.addEventListener("dragend", (e) => {
-    e.preventDefault()
+    if (window.innerWidth > 500) {
+        console.log("DRAG END")
+        e.preventDefault()
+    }
 })
 
 carrousel.addEventListener("mousedown", (e) => {
-
-    isSelected = true
-    start = e.pageX
+    if (window.innerWidth > 500) { 
+        console.log("MOUSE DOWN")
+        isSelected = true
+        start = e.pageX
+    }
 })
 
 carrousel.addEventListener("mouseup", (e) => {
-    isSelected = false
-    end = e.pageX
+    if (window.innerWidth > 500) {
+        console.log("MOUSE UP")
+        isSelected = false
+        end = e.pageX
+    }
 })
+

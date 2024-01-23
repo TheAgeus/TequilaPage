@@ -1,0 +1,115 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    font-family: "Pirata";
+    transition: background-color 0.5s ease-out 50ms;
+}
+
+.navbar-btn {
+    position: fixed;
+    width: 100%;
+}
+.open-nav-btn {
+    padding: 1rem;
+
+}
+
+/* Clase para que se muestren las cosas */
+.show {
+    display: block !important;
+}
+.hide {
+    display: none !important;
+}
+
+/* Clase para transicion del bakcground del navbar */
+.nav-wt-bg {
+    background-color: hsla(158, 100%, 97%, 0.85);
+    box-shadow: -1px -1px 24px 0px rgba(0,0,0,1);
+}
+.nav-wt-bg > ul > li > a {
+    color: black !important;
+}
+
+.navbar > ul > li > a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.navbar > ul > li > a:hover {
+    color: rgb(130, 130, 130);
+}
+.navbar > ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+.navbar-logo > a{
+    font-size: 3rem;
+    text-align: center;
+}
+.navbar-item > a{
+    font-size: 1.5rem;
+    word-wrap: break-word;
+}
+.dummy-content {
+    background-color: rgb(134, 255, 255);
+    height: 200vh;
+    width: 100%;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(158, 100%, 97%, 1)'/><path d='M10-6V6M10 14v12M26 10H14M6 10H-6'  stroke-linecap='square' stroke-width='1' stroke='hsla(200, 79%, 83%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
+}
+
+.navbar > ul > li {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-button {
+    display: none;
+}
+
+.boton-tres-lineas {
+
+    display: flex;
+    flex-direction: column;
+}
+.navbar-button:hover {
+    cursor: pointer;
+}
+.boton-tres-lineas > div {
+    padding-inline: 1rem;
+    margin-bottom: 5px;
+    background-color: rgb(0, 0, 0);
+    width: 5px;
+    height: 3px;
+    border-radius: 20px;
+    transform-origin: left center;
+}
+
+@media (width < 1000px) {
+    .navbar > ul {
+        flex-direction: column;
+    }
+    .navbar > ul > li {
+        padding-block: 1rem;
+    }
+    .navbar-item {
+        display: none;
+    }
+
+    .navbar-button {
+        display: block;
+        position: absolute;
+        top:0;
+        right: 0;
+        margin: 1rem;
+
+    }
+    .navbar-logo > a {
+        font-size: 2rem;
+    }
+}
+

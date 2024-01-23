@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Pirata";
+    src: url(/fonts/PirataOne-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+

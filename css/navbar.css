@@ -3,6 +3,7 @@
     width: 100%;
     font-family: "Pirata";
     transition: background-color 0.5s ease-out 50ms;
+    z-index: 1;
 }
 
 .navbar-btn {
@@ -24,7 +25,7 @@
 
 /* Clase para transicion del bakcground del navbar */
 .nav-wt-bg {
-    background-color: rgba(255, 243, 232, .9);
+    background-color: rgba(255, 243, 232, .98);
     box-shadow: -1px -1px 24px 0px rgba(0,0,0,1);
 }
 .nav-wt-bg > ul > li > a {
@@ -124,6 +125,10 @@
     }
     .navbar-logo > a {
         font-size: 2rem;
+        flex-direction: row;
+    }
+    .navbar-logo > a > small {
+        padding-inline: 0.5rem;
     }
 }
 

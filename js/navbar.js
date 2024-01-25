@@ -3,6 +3,10 @@ const navbar_button = document.querySelector(".navbar-button")
 const navbar_items = document.querySelectorAll(".navbar-item")
 const img_hero = document.querySelector(".hero-container").querySelector("img")
 
+if (window.innerWidth < 1000) {
+    img_hero.src = "/img/hero_small.png"
+}
+
 window.addEventListener("resize", (event) => {
     if (window.innerWidth < 1000) {
 

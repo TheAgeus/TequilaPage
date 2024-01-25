@@ -1,0 +1,29 @@
+.youtube-container {
+    margin: 5%;
+    width: 90%;
+    aspect-ratio: 6/3;
+}
+
+.youtube-description {
+    font-size: 4rem;
+    padding: 2%;
+    text-align: start;
+    font-family: pirata;
+    color: rgb(74, 74, 74);
+}
+
+
+@media (width < 1000px) {
+    .youtube-container {
+        margin-block: 5%;
+        margin-inline: 0%;
+        width: 100%;
+        
+    }
+
+    .youtube-description {
+        font-size: 2rem;
+        padding: 2%;
+        text-align: start;
+    }
+}

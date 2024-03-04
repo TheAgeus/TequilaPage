@@ -1,0 +1,108 @@
+/*
+    Im gonna try movile 
+    first and grid template
+*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+}
+.grid-container > div {
+    display: flex;
+
+    justify-content: center;
+}
+.imagen-container > img {
+    width: 100%;
+}
+
+.grid-container > .texto-container {
+}
+.grid-container > .imagen-container {
+    padding-inline: 5%;
+}
+.grid-container > .button-container {
+    padding-block: 1em;
+}
+
+.grid-container > .texto-container > .texto {
+    padding: 5%;
+}
+.grid-container > .texto-container > .texto > .titulo > .title-prefix {
+    font-size: 1.9em;
+    display: inline-block;
+    font-family: pirata;
+}
+.grid-container > .texto-container > .texto > .titulo > .title {
+    font-size: 3em;
+    display: inline-block;
+    font-family: pirata;
+}
+.grid-container > .texto-container > .texto > .titulo {
+    text-align: end;
+    padding-inline: 5%;
+}
+.grid-container > .texto-container > .texto > .text {
+    font-size: 1.2em;
+}
+
+.button-container > .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.button-container > .flex-container > a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+
+}
+.button-container > .flex-container > a:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+    .grid-container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding-inline: 2%;
+    }
+    .grid-container > .texto-container {
+        grid-column: 1/4;
+        grid-row: 1/5; 
+    }
+    .grid-container > .imagen-container {
+        grid-column: 4/7;
+        grid-row: 1/4; 
+        padding-inline: 0%;
+    }
+    .grid-container > .button-container {
+        grid-column: 4/7;
+        grid-row: 4/5; 
+    }
+    .grid-container > .texto-container > .texto > .text {
+        font-size: 1.4em;
+        line-height: 1.2em;
+    }
+}
+

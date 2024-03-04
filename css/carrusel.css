@@ -1,0 +1,78 @@
+.carrusel-container {
+    width: 100%;
+    margin: auto;
+    overflow: show;
+    overflow: hidden;
+
+    position: relative;
+
+
+    padding-bottom: 5em;
+}
+
+.carrusel-bottle-container {
+    display: flex;
+}
+
+
+
+.crrs-btn {
+    position: absolute;
+    top: 45%;
+    background-color: white;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+}
+.crrs-btn:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+}
+.button-next {
+    right: 5px;
+}
+.button-before {
+    left: 5px;
+}
+
+.bottle-container > img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}   
+
+.bottle-container {
+    position: relative;
+}
+.bottle-container > img {
+    transition: 0.2s ease-out 50ms;
+}
+.bottle-container > a {
+    background-color: black;
+    color: white;
+    bottom: 0;
+    right: 0;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+    transition: 0.2s ease-out 50ms;
+}
+.bottle-container > a:hover {
+    transform: scale(1.2);
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+
+
+@media (width < 1000px) {
+    .bottle-container {
+        transform: scale(0.8);
+    }
+    .carrusel-container {
+        padding-bottom: 0;
+    }
+}

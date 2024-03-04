@@ -1,0 +1,58 @@
+.cards-section {
+    background-image: url(/img/wood-texture.jpg);
+    background-repeat: repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: rgb(252, 242, 229);
+    margin: 5%;
+}
+.cards-section > .card > .text {
+    font-size: 1.2em;
+}
+.cards-section > .card > .title {
+    font-size: 1.8em;
+    padding-block-start: 1rem;
+    font-weight: bold;
+    color: rgb(49, 21, 3);
+}
+.cards-section > .card  {
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px 1px;
+    aspect-ratio: 2/1;
+    width: 90%;
+}
+
+@media screen and (min-width: 400px) {
+    .cards-section {
+        margin: auto;
+    }
+    .card {
+        min-width: 300px;
+        max-width: 300px;
+        aspect-ratio: unset !important;
+        margin-block: 1rem;
+    }
+}
+@media screen and (min-width: 600px) {
+   
+}
+@media screen and (min-width: 1000px) {
+    .cards-section {
+        flex-direction: row;
+        padding-block: 3rem;
+        align-items: stretch;
+    }
+    .cards-section > .card > .title {
+        font-size: 2.2em;
+    }
+    .card {
+        margin-inline: 1rem;
+    }
+}

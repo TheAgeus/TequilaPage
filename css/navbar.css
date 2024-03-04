@@ -3,7 +3,7 @@
     width: 100%;
     font-family: "Pirata";
     transition: background-color 0.5s ease-out 50ms;
-    z-index: 1;
+    z-index: 2;
 }
 
 .navbar-btn {

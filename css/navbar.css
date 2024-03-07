@@ -12,8 +12,15 @@
 }
 .open-nav-btn {
     padding: 1rem;
-
 }
+.top-for-nav {
+    height: 7rem;
+    width: 100%;
+    background-color: rgb(18, 18, 18);
+
+
+  }
+  
 
 /* Clase para que se muestren las cosas */
 .show {
@@ -68,7 +75,7 @@
     word-wrap: break-word;
 }
 .dummy-content {
-    height: 200vh;
+    
     width: 100%;
 }
 

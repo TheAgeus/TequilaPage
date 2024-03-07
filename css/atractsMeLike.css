@@ -1,0 +1,56 @@
+.section02{
+  margin: 5rem;
+  padding-block: 3rem;
+}
+.reverse .rowContainer {
+  flex-direction: row-reverse;
+}
+.section02 .rowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:2rem;
+}
+.section02 .rowContainer .imgContainer {
+  min-width: 300px;
+  max-width: 100%;
+  flex: 1;
+}
+.section02 .rowContainer .imgContainer img:hover {
+  scale: 1.02;
+}
+.section02 .rowContainer .imgContainer img {
+  border-radius: 100%;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 1px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.section02 .rowContainer .textContainer {
+  flex: 1;
+  padding-inline: 3rem;
+
+}
+.section02 .rowContainer .textContainer .titleContainer {
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 3rem;
+  padding-bottom: 2rem;
+}
+.section02 .rowContainer .textContainer .regularTextContainer {
+  font-size: 1.2rem;
+}
+
+@media (width < 1000px) {
+  .section02 .rowContainer {
+    flex-direction: column;
+  }
+  .section02 .rowContainer .textContainer {
+    padding-inline: 0.5rem;
+  }
+  .section02 {
+    margin: 0.5rem;
+
+  }
+  .section02 .rowContainer .textContainer .titleContainer {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,108 @@
+/* Movile First */
+/* Global Footer Container */
+.footer {
+
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(18, 18, 18);
+  color: white;
+}
+/* First Footer Container */
+.footer .logo-redes-container {
+  padding-block: 2rem;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .logo-redes-container .logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Pirata;
+  padding-inline: 2rem;
+  width: fit-content;
+}
+.footer .logo-redes-container .logo-container .top {
+  line-height: 2rem;
+  font-size: 2rem;
+  transform: scaleY(0.8);
+}
+.footer .logo-redes-container .logo-container .bottom {
+  line-height: 2rem;
+  font-size: 2rem;
+  transform: scaleY(0.8);
+}
+.footer .logo-redes-container .redes-container .redSocial img {
+  width: 90%;
+  background-color: white;
+  border-radius: 100%;
+}
+.footer .logo-redes-container .redes-container .redSocial {
+  width: 2rem;
+  height: 2rem;
+
+}
+.footer .logo-redes-container .redes-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+}
+/* Second Footer Container */
+.footer .links-container {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding-block: 3rem;
+}
+.footer .links-container .link a {
+  text-decoration: none;
+  color: rgb(214, 214, 214);
+  font-weight: bold;
+  font-size: 1rem;
+}
+/* Third Footer Container */
+.footer .bottom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 2rem;
+  border: 2px solid black;
+}
+.footer .bottom-container .img-container {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+}
+.footer .bottom-container .img-container img {
+  width: 100%;
+}
+
+/* Media Query, not Movile */
+@media (width > 500px) {
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer .logo-redes-container {
+    width: calc(40% - 4px);
+  }
+  .footer .links-container {
+    width: calc(60% - 4px);
+  }
+  .footer .links-container .link {
+    padding-inline: 2rem;
+  }
+  .footer .bottom-container {
+    width: calc(100% - 4px);
+  }
+}
